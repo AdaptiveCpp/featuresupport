@@ -34,12 +34,33 @@
 | `atomic_ref` | :x: | | |
 | `marray` | :x: | | |
 | New `SYCL/sycl.hpp` header | :heavy_check_mark: ([PR](https://github.com/illuhad/hipSYCL/pull/216)) | | |
-| C++17 by default | :heavy_check_mark: ([PR](https://github.com/illuhad/hipSYCL/pull/206))
+| C++17 by default | :heavy_check_mark: ([PR](https://github.com/illuhad/hipSYCL/pull/206)) | | |
 | Builtin changes: `ctz()`, `clz()` | :x: | | |
 | Remove `*_class` types | :x: | | |
 | `const` return type for read accessor `operator[]` | :x: | | |
 | Remove buffer API for `unique_ptr` | :x: | | |
 | Replace `program` class with `module` | :x: | | |
+| Add `kernel_handler` | :x: | | |
+| explicit `queue`, `context` constructors | :heavy_check_mark: ([PR](https://github.com/illuhad/hipSYCL/pull/328)) | | |
+| Only require C++ trivially copyable for shared data | :heavy_check_mark: | | Has always worked thanks to CUDA/HIP toolchain |
+| Update group class with new types/member functions | :x: | | |
+| Remove `nd_item::barrier()` | :x: | | |
+| Replace `mem_fence` with `atomic_fence` | :x: | | |
+| Add `vec::operator[]`,unary `+,-`, `static constexpr get_size()/get_count()` | :x: | | |
+| buffer, local accessor are C++ `ContiguousContainer` | :x: | | |
+| Replace `image` with `sampled_image`, `unsampled_image` | :x: | | |
+| All accessors are placeholders | :x: | | (Partially done) |
+| Use single exception type derived from `std::exception` | :x: | | |
+| Default asynchronous handler should terminate program  | :heavy_check_mark: ([PR](https://github.com/illuhad/hipSYCL/pull/289)) | | |
+| Kernel invocation APIs take const reference to kernels, kernels must be immutable | :x: | | |
+| Queue constructor accepting both `device` and `context` | :x: | | |
+| Simplified `parallel_for` API | :x: | | |
+| Clarified names for device specific info queries | :x: | | |
+| Address space changes, generic address spaces | :x: | | Partially, we have always had generic address spaces because of CUDA/HIP |
+| Updated `multi_ptr` interface `:x:` | | |
+| Remove OpenCL types, `cl_int` etc | :heavy_check_mark: | | hipSYCL has stopped supporting them a long time ago |
+
+
 
 
 * [1] HIP/ROCm implements unified memory using slow device accessible host memory. This means that hipSYCL's call to `hipMallocManaged` cannot produce efficient shared allocations.
