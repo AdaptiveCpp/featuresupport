@@ -57,7 +57,7 @@
 | Simplified `parallel_for` API | :x: | | |
 | Clarified names for device specific info queries | :x: | | |
 | Address space changes, generic address spaces | :x: | | Partially, we have always had generic address spaces because of CUDA/HIP |
-| Updated `multi_ptr` interface | `:x:` | | |
+| Updated `multi_ptr` interface | :x: | | |
 | Remove OpenCL types, `cl_int` etc | :heavy_check_mark: | | hipSYCL has stopped supporting them a long time ago |
 
 
