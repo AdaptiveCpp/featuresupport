@@ -33,6 +33,14 @@
 | Deduction guides | :x: | | |
 | `atomic_ref` | :x: | | |
 | `marray` | :x: | | |
+| New `SYCL/sycl.hpp` header | :heavy_check_mark: ([PR](https://github.com/illuhad/hipSYCL/pull/216)) | | |
+| C++17 by default | :heavy_check_mark: ([PR](https://github.com/illuhad/hipSYCL/pull/206))
+| Builtin changes: `ctz()`, `clz()` | :x: | | |
+| Remove `*_class` types | :x: | | |
+| `const` return type for read accessor `operator[]` | :x: | | |
+| Remove buffer API for `unique_ptr` | :x: | | |
+| Replace `program` class with `module` | :x: | | |
+
 
 * [1] HIP/ROCm implements unified memory using slow device accessible host memory. This means that hipSYCL's call to `hipMallocManaged` cannot produce efficient shared allocations.
 * [2] HIP/ROCm does not provide the required functionality, so hipSYCL cannot expose it. Prefetch calls are ignored at the moment.
