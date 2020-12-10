@@ -26,11 +26,11 @@
 | In-order queues | :heavy_check_mark: ([PR](https://github.com/illuhad/hipSYCL/pull/320)) | | |
 | Explicit dependencies (`depends_on()`) | :heavy_check_mark: ([PR](https://github.com/illuhad/hipSYCL/pull/320)) | | |
 | Backend interop API | :heavy_check_mark: ([PR](https://github.com/illuhad/hipSYCL/pull/327)) | [3] | |
-| Reductions | :x: | | |
-| Group algorithms | :x: | | |
+| Reductions | :heavy_check_mark: ([PR](https://github.com/illuhad/hipSYCL/pull/374)) | [4] | |
+| Group algorithms | :x: ([PR](https://github.com/illuhad/hipSYCL/pull/391)) | [5] | |
 | New device selector API | :x: | | |
 | Aspect API | :x: | | |
-| Deduction guides | :x: | | |
+| Deduction guides | :heavy_check_mark: ([PR](https://github.com/illuhad/hipSYCL/pull/388)) | | |
 | `atomic_ref` | :x: | | |
 | `marray` | :x: | | |
 | New `SYCL/sycl.hpp` header | :heavy_check_mark: ([PR](https://github.com/illuhad/hipSYCL/pull/216)) | | |
@@ -66,3 +66,5 @@
 * [1] HIP/ROCm implements unified memory using slow device accessible host memory. This means that hipSYCL's call to `hipMallocManaged` cannot produce efficient shared allocations.
 * [2] HIP/ROCm does not provide the required functionality, so hipSYCL cannot expose it. Prefetch calls are ignored at the moment.
 * [3] The interop types that backends expose is limited. Native queues can only be obtained using an `interop_handle` because a queue in hipSYCL does not relate to any specific backend object.
+* [4] Only scalar reductions are supported. Note that the reduction interface is expected to change slightly with the release of SYCL 2020 final.
+* [5] Note that the interface of group algorithms is expected to change slightly with the release of SYCL 2020 final.
