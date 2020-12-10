@@ -27,7 +27,7 @@
 | Explicit dependencies (`depends_on()`) | :heavy_check_mark: ([PR](https://github.com/illuhad/hipSYCL/pull/320)) | | |
 | Backend interop API | :heavy_check_mark: ([PR](https://github.com/illuhad/hipSYCL/pull/327)) | [3] | |
 | Reductions | :heavy_check_mark: ([PR](https://github.com/illuhad/hipSYCL/pull/374)) | [4] | |
-| Group algorithms | :x: ([PR](https://github.com/illuhad/hipSYCL/pull/391)) | [5] | |
+| Group algorithms | :heavy_check_mark: ([PR](https://github.com/illuhad/hipSYCL/pull/391)) | [5] | |
 | New device selector API | :x: | | |
 | Aspect API | :x: | | |
 | Deduction guides | :heavy_check_mark: ([PR](https://github.com/illuhad/hipSYCL/pull/388)) | | |
