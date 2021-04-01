@@ -15,7 +15,7 @@ This page summarizes the state of SYCL feature support in the current `develop` 
 
 | Feature | Supported (PR link) | Caveats | Comments |
 | --- | --- | --- | --- |
-| Accessor simiplifications | :x: |  |  |
+| Accessor simplifications | :heavy_check_mark: (partial) ([PR](https://github.com/illuhad/hipSYCL/pull/490)) | [6] |  |
 | USM: Memory management functions | :heavy_check_mark: ([PR](https://github.com/illuhad/hipSYCL/pull/308))| [1] | |
 | USM: Queue shortcuts | :heavy_check_mark: ([PR](https://github.com/illuhad/hipSYCL/pull/323)) | | |
 | USM: Prefetch | :heavy_check_mark: ([PR](https://github.com/illuhad/hipSYCL/pull/323)) | [2] | |
@@ -70,3 +70,4 @@ This page summarizes the state of SYCL feature support in the current `develop` 
 * [3] The interop types that backends expose is limited. Native queues can only be obtained using an `interop_handle` because a queue in hipSYCL does not relate to any specific backend object.
 * [4] Only scalar reductions are supported. Note that the reduction interface is expected to change slightly with the release of SYCL 2020 final.
 * [5] Note that the interface of group algorithms is expected to change slightly with the release of SYCL 2020 final.
+* [6] Constructing read-only accessor using `accessor<const T>` from non-const `buffer<T>` is not yet supported.
