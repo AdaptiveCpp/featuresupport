@@ -48,7 +48,7 @@ This page summarizes the state of SYCL feature support in the current `develop` 
 | Update group class with new types/member functions | :x: | | |
 | Remove `nd_item::barrier()` | :x: | | |
 | Replace `mem_fence` with `atomic_fence` | :x: | | |
-| Add `vec::operator[]`,unary `+,-`, `static constexpr get_size()/get_count()` | :x: | | |
+| Add `vec::operator[]`,unary `+,-`, `static constexpr get_size()/get_count()` | :heavy_check_mark: ([PR](https://github.com/illuhad/hipSYCL/pull/415)) | | |
 | buffer, local accessor are C++ `ContiguousContainer` | :x: | | |
 | Replace `image` with `sampled_image`, `unsampled_image` | :x: | | |
 | All accessors are placeholders | :heavy_check_mark: ([PR](https://github.com/illuhad/hipSYCL/pull/490)) | | |
