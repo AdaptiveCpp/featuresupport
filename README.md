@@ -51,7 +51,7 @@ This page summarizes the state of SYCL feature support in the current `develop` 
 | Add `vec::operator[]`,unary `+,-`, `static constexpr get_size()/get_count()` | :x: | | |
 | buffer, local accessor are C++ `ContiguousContainer` | :x: | | |
 | Replace `image` with `sampled_image`, `unsampled_image` | :x: | | |
-| All accessors are placeholders | :x: | | (Partially done) |
+| All accessors are placeholders | :heavy_check_mark: (partial) ([PR](https://github.com/illuhad/hipSYCL/pull/490)) | | |
 | Use single exception type derived from `std::exception` | :x: | | |
 | Default asynchronous handler should terminate program  | :heavy_check_mark: ([PR](https://github.com/illuhad/hipSYCL/pull/289)) | | |
 | Kernel invocation APIs take const reference to kernels, kernels must be immutable | :x: | | |
