@@ -30,7 +30,7 @@ This page summarizes the state of SYCL feature support in the current `develop` 
 | Backend interop API | :heavy_check_mark: ([PR](https://github.com/illuhad/hipSYCL/pull/327)) | [3] | |
 | Reductions | :heavy_check_mark: ([PR](https://github.com/illuhad/hipSYCL/pull/374)) | [4] | |
 | Group algorithms | :heavy_check_mark: ([PR](https://github.com/illuhad/hipSYCL/pull/391)) | [5] | |
-| New device selector API | :x: | | |
+| New device selector API | :heavy_check_mark: ([PR](https://github.com/illuhad/hipSYCL/pull/531)) | | |
 | Aspect API | :heavy_check_mark: ([PR](https://github.com/illuhad/hipSYCL/pull/530)) | | |
 | Deduction guides | :heavy_check_mark: ([PR](https://github.com/illuhad/hipSYCL/pull/388)) | | |
 | `atomic_ref` | :x: | | |
