@@ -31,7 +31,7 @@ This page summarizes the state of SYCL feature support in the current `develop` 
 | Reductions | :heavy_check_mark: ([PR](https://github.com/illuhad/hipSYCL/pull/374)) | [4] | |
 | Group algorithms | :heavy_check_mark: ([PR](https://github.com/illuhad/hipSYCL/pull/391)) | [5] | |
 | New device selector API | :x: | | |
-| Aspect API | :x: | | |
+| Aspect API | :heavy_check_mark: ([PR](https://github.com/illuhad/hipSYCL/pull/530)) | | |
 | Deduction guides | :heavy_check_mark: ([PR](https://github.com/illuhad/hipSYCL/pull/388)) | | |
 | `atomic_ref` | :x: | | |
 | `marray` | :x: | | |
