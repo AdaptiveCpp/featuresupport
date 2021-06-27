@@ -55,7 +55,7 @@ This page summarizes the state of SYCL feature support in the current `develop` 
 | Use single exception type derived from `std::exception` | :x: | | |
 | Default asynchronous handler should terminate program  | :heavy_check_mark: ([PR](https://github.com/illuhad/hipSYCL/pull/289)) | | |
 | Kernel invocation APIs take const reference to kernels, kernels must be immutable | :x: | | |
-| Queue constructor accepting both `device` and `context` | :x: | | |
+| Queue constructor accepting both `device` and `context` | :heavy_check_mark: ([PR](https://github.com/illuhad/hipSYCL/pull/447)) | | |
 | Simplified `parallel_for` API | :x: | | |
 | Clarified names for device specific info queries | :x: | | |
 | Address space changes, generic address spaces | :x: | | Partially, we have always had generic address spaces because of CUDA/HIP |
