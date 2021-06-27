@@ -33,7 +33,7 @@ This page summarizes the state of SYCL feature support in the current `develop` 
 | New device selector API | :heavy_check_mark: ([PR](https://github.com/illuhad/hipSYCL/pull/531)) | | |
 | Aspect API | :heavy_check_mark: ([PR](https://github.com/illuhad/hipSYCL/pull/530)) | | |
 | Deduction guides | :heavy_check_mark: ([PR](https://github.com/illuhad/hipSYCL/pull/388)) | | |
-| `atomic_ref` | :x: | | |
+| `atomic_ref` | :heavy_check_mark: ([PR](https://github.com/illuhad/hipSYCL/pull/584)) | | |
 | `marray` | :x: | | |
 | New `SYCL/sycl.hpp` header | :heavy_check_mark: ([PR](https://github.com/illuhad/hipSYCL/pull/216)) | | |
 | C++17 by default | :heavy_check_mark: ([PR](https://github.com/illuhad/hipSYCL/pull/206)) | | |
