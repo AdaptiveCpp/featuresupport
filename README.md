@@ -1,6 +1,6 @@
-# hipSYCL feature support
+# AdaptiveCpp feature support
 
-This page summarizes the state of SYCL feature support in the current `develop` branch of hipSYCL. Features that are supported are listed with a link to the pull request where they have been merged.
+This page summarizes the state of SYCL feature support in the current `develop` branch of AdaptiveCpp. Features that are supported are listed with a link to the pull request where they have been merged.
 
 ## SYCL 1.2.1 features
 (This list is incomplete and only contains features that are known to be problematic)
